@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF4DDF96-6A9A-4D7E-BC11-0912C6CB012E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BB.Poker.WinFormsClient</RootNamespace>
+    <AssemblyName>BB.Poker.WinFormsClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\BB.Common.Resources\Lidgren.Network.Gen3\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\ChooseSeatForm\ChooseSeatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ChooseSeatForm\ChooseSeatForm.Designer.cs">
+      <DependentUpon>ChooseSeatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ClientDelegates\ClientDelegates.cs" />
+    <Compile Include="Client\ClientLogicUnit\ClientLogicUnit.cs" />
+    <Compile Include="Client\ConsoleUserInterface\ConsoleUserInterface.cs" />
+    <Compile Include="Client\FormsUserInterface\FormsUserInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormsUserInterface\FormsUserInterface.Designer.cs">
+      <DependentUpon>FormsUserInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\GameClient\GameClient.cs" />
+    <Compile Include="Client\GameOutcomeForm\GameOutcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\GameOutcomeForm\GameOutcomeForm.Designer.cs">
+      <DependentUpon>GameOutcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\JoinTableEventArgs\JoinTableEventArgs.cs" />
+    <Compile Include="Client\LoginForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\LoginForm\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PlayerControl\PlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\PlayerControl\PlayerControl.Designer.cs">
+      <DependentUpon>PlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PlayerDecisionForm\PlayerDecisionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\PlayerDecisionForm\PlayerDecisionForm.Designer.cs">
+      <DependentUpon>PlayerDecisionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\TableListItemControl\TableListItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client\TableListItemControl\TableListItemControl.Designer.cs">
+      <DependentUpon>TableListItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\IUserInterface\IUserInterface.cs" />
+    <Compile Include="MetroClient\GameClientMessageHandler\GameClientMessageHandler.cs" />
+    <Compile Include="MetroClient\GameClientModuleHost\GameClientModuleHost.cs" />
+    <Compile Include="MetroClient\GameClientModule\GameClientModule.cs" />
+    <Compile Include="MetroClient\MetroClientForm\MetroClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroClient\MetroClientForm\MetroClientForm.Designer.cs">
+      <DependentUpon>MetroClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\MetroMessageBoxForm\MetroMessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetroClient\MetroMessageBoxForm\MetroMessageBoxForm.Designer.cs">
+      <DependentUpon>MetroMessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\MetroMessageBox\MetroMessageBox.cs" />
+    <Compile Include="MetroClient\Modules\Connection\ConnectionModuleControl\ConnectionModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Connection\ConnectionModuleControl\ConnectionModuleControl.Designer.cs">
+      <DependentUpon>ConnectionModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Connection\ConnectionModule\ConnectionModule.cs" />
+    <Compile Include="MetroClient\Modules\Lobby\JoinTableResponseHandler\JoinTableResponseHandler.cs" />
+    <Compile Include="MetroClient\Modules\Lobby\LobbyListItemControl\LobbyListItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Lobby\LobbyListItemControl\LobbyListItemControl.Designer.cs">
+      <DependentUpon>LobbyListItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Lobby\LobbyModuleControl\LobbyModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Lobby\LobbyModuleControl\LobbyModuleControl.Designer.cs">
+      <DependentUpon>LobbyModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Lobby\LobbyModule\LobbyModule.cs" />
+    <Compile Include="MetroClient\Modules\Lobby\TableItemClickedEventArgs\TableItemClickedEventArgs.cs" />
+    <Compile Include="MetroClient\Modules\Lobby\TableListingResponseHandler\TableListingResponseHandler.cs" />
+    <Compile Include="MetroClient\Modules\Login\LoginModuleControl\LoginModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Login\LoginModuleControl\LoginModuleControl.Designer.cs">
+      <DependentUpon>LoginModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Login\LoginModule\LoginModule.cs" />
+    <Compile Include="MetroClient\Modules\Login\LoginResponseHandler\LoginResponseHandler.cs" />
+    <Compile Include="MetroClient\Modules\Table\CardControl\CardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\CardControl\CardControl.Designer.cs">
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\ChatMenuControl\ChatMenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\ChatMenuControl\ChatMenuControl.Designer.cs">
+      <DependentUpon>ChatMenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\DecisionMenuControl\DecisionMenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\DecisionMenuControl\DecisionMenuControl.Designer.cs">
+      <DependentUpon>DecisionMenuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\DeckAndPotControl\DeckAndPotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\DeckAndPotControl\DeckAndPotControl.Designer.cs">
+      <DependentUpon>DeckAndPotControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\SeatControl\SeatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\SeatControl\SeatControl.Designer.cs">
+      <DependentUpon>SeatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\TableModuleControl\TableModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\TableModuleControl\TableModuleControl.Designer.cs">
+      <DependentUpon>TableModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\Table\TableModule\TableModule.cs" />
+    <Compile Include="MetroClient\Modules\VerifyClient\VerifyClientModuleControl\VerifyClientModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetroClient\Modules\VerifyClient\VerifyClientModuleControl\VerifyClientModuleControl.Designer.cs">
+      <DependentUpon>VerifyClientModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetroClient\Modules\VerifyClient\VerifyClientModule\VerifyClientModule.cs" />
+    <Compile Include="MetroClient\Modules\VerifyClient\VerifyClientResponseHandler\VerifyClientResponseHandler.cs" />
+    <Compile Include="MetroClient\IMetroClientUserInterface\IMetroClientUserInterface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client\ChooseSeatForm\ChooseSeatForm.resx">
+      <DependentUpon>ChooseSeatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormsUserInterface\FormsUserInterface.resx">
+      <DependentUpon>FormsUserInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\GameOutcomeForm\GameOutcomeForm.resx">
+      <DependentUpon>GameOutcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\LoginForm\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\PlayerControl\PlayerControl.resx">
+      <DependentUpon>PlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\PlayerDecisionForm\PlayerDecisionForm.resx">
+      <DependentUpon>PlayerDecisionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\TableListItemControl\TableListItemControl.resx">
+      <DependentUpon>TableListItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\MetroClientForm\MetroClientForm.resx">
+      <DependentUpon>MetroClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\MetroMessageBoxForm\MetroMessageBoxForm.resx">
+      <DependentUpon>MetroMessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Connection\ConnectionModuleControl\ConnectionModuleControl.resx">
+      <DependentUpon>ConnectionModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Lobby\LobbyListItemControl\LobbyListItemControl.resx">
+      <DependentUpon>LobbyListItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Lobby\LobbyModuleControl\LobbyModuleControl.resx">
+      <DependentUpon>LobbyModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Login\LoginModuleControl\LoginModuleControl.resx">
+      <DependentUpon>LoginModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\CardControl\CardControl.resx">
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\ChatMenuControl\ChatMenuControl.resx">
+      <DependentUpon>ChatMenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\DecisionMenuControl\DecisionMenuControl.resx">
+      <DependentUpon>DecisionMenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\DeckAndPotControl\DeckAndPotControl.resx">
+      <DependentUpon>DeckAndPotControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\SeatControl\SeatControl.resx">
+      <DependentUpon>SeatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\Table\TableModuleControl\TableModuleControl.resx">
+      <DependentUpon>TableModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetroClient\Modules\VerifyClient\VerifyClientModuleControl\VerifyClientModuleControl.resx">
+      <DependentUpon>VerifyClientModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BB.Common.WinForms\BB.Common.WinForms.csproj">
+      <Project>{2AC486AC-177F-4E43-A9E8-363FABE91E11}</Project>
+      <Name>BB.Common.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BB.Poker.Common\BB.Poker.Common.csproj">
+      <Project>{BD0EF50C-2299-445B-90FA-9756DB42D4DC}</Project>
+      <Name>BB.Poker.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

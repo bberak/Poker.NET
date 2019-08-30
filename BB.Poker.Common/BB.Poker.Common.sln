@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB.Poker.Common", "BB.Poker.Common.csproj", "{BD0EF50C-2299-445B-90FA-9756DB42D4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB.Poker.Common.Tests", "BB.Poker.Common.Tests\BB.Poker.Common.Tests.csproj", "{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E5BCA4C-97A9-42E2-B011-1F1FD6A17DBE}"
+	ProjectSection(SolutionItems) = preProject
+		BB.Poker.Common.vsmdi = BB.Poker.Common.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB.Common.WinForms", "..\BB.Common.WinForms\BB.Common.WinForms.csproj", "{2AC486AC-177F-4E43-A9E8-363FABE91E11}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BB.Poker.Common.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Debug|x86.ActiveCfg = Debug|x86
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Debug|x86.Build.0 = Debug|x86
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Release|x86.ActiveCfg = Release|x86
+		{BD0EF50C-2299-445B-90FA-9756DB42D4DC}.Release|x86.Build.0 = Release|x86
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Debug|x86.ActiveCfg = Debug|x86
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Debug|x86.Build.0 = Debug|x86
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Release|x86.ActiveCfg = Release|x86
+		{73B611A6-9A6D-4A6D-B2B2-727E0C0DF473}.Release|x86.Build.0 = Release|x86
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Debug|x86.ActiveCfg = Debug|x86
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Debug|x86.Build.0 = Debug|x86
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Release|x86.ActiveCfg = Release|x86
+		{2AC486AC-177F-4E43-A9E8-363FABE91E11}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

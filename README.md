@@ -1,0 +1,3 @@
+# Poker.NET
+
+Poker.NET is an implementation of an MMO poker game on the .NET stack. The project uses a client-server architecture, and lightweight communication is facilitated using the UDP protocol. The system can be scaled-out horizontally - where tables and games can be distributed amongst N game servers. Additional servers can be added to the network as required - and are discoverable using a multicast broadcast. Servers have support for various gametypes, and the project includes a simple .NET client application.

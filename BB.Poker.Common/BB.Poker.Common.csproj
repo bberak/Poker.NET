@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD0EF50C-2299-445B-90FA-9756DB42D4DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BB.Poker.Common</RootNamespace>
+    <AssemblyName>BB.Poker.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\BB.Common.Resources\Lidgren.Network.Gen3\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\BB.Common.Resources\Json.3.5.R8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\BaseModuleHost\BaseModuleHost.cs" />
+    <Compile Include="Client\BaseModule\BaseModule.cs" />
+    <Compile Include="Client\IModuleHost\IModuleHost.cs" />
+    <Compile Include="Client\IModule\IModule.cs" />
+    <Compile Include="Game\Account\Account.cs" />
+    <Compile Include="Game\BaseClientMessageObject\BaseClientMessageObject.cs" />
+    <Compile Include="Game\BlindFeeNotice\BlindFeeNotice.cs" />
+    <Compile Include="Game\CardCollection\CardCollection.cs" />
+    <Compile Include="Game\Card\Card.cs" />
+    <Compile Include="Game\ChatMessage\ChatMessage.cs" />
+    <Compile Include="Game\ClientType\ClientType.cs" />
+    <Compile Include="Game\Client\Client.cs" />
+    <Compile Include="Game\Combination\Combination.cs" />
+    <Compile Include="Game\DecisionType\DecisionType.cs" />
+    <Compile Include="Game\Deck\Deck.cs" />
+    <Compile Include="Game\ForcedPlayerLogoutNotice\ForcedPlayerLogoutNotice.cs" />
+    <Compile Include="Game\ForcedTableLeaveNotice\ForcedTableLeaveNotice.cs" />
+    <Compile Include="Game\GameMessageType\GameMessageType.cs" />
+    <Compile Include="Game\GameOutcome2\GameOutcome2.cs" />
+    <Compile Include="Game\GameOutcome\GameOutcome.cs" />
+    <Compile Include="Game\Hand\Hand.cs" />
+    <Compile Include="Game\JoinTableInfo\JoinTableInfo.cs" />
+    <Compile Include="Game\JoinTableRequest\JoinTableRequest.cs" />
+    <Compile Include="Game\JoinTableResponse\JoinTableResponse.cs" />
+    <Compile Include="Game\LoginRequest\LoginRequest.cs" />
+    <Compile Include="Game\LoginResponse\LoginResponse.cs" />
+    <Compile Include="Game\PlayerDecisionNotification\PlayerDecisionNotification.cs" />
+    <Compile Include="Game\PlayerDecisionRequest\PlayerDecisionRequest.cs" />
+    <Compile Include="Game\PlayerDecisionResponse\PlayerDecisionResponse.cs" />
+    <Compile Include="Game\PlayerLogoutNotice\PlayerLogoutNotice.cs" />
+    <Compile Include="Game\PlayerResult\PlayerResult.cs" />
+    <Compile Include="Game\PlayerState\PlayerState.cs" />
+    <Compile Include="Game\PlayerSummary\PlayerSummary.cs" />
+    <Compile Include="Game\PokerType\PokerType.cs" />
+    <Compile Include="Game\Rank\Rank.cs" />
+    <Compile Include="Game\Suit\Suit.cs" />
+    <Compile Include="Game\TableLeaveNotice\TableLeaveNotice.cs" />
+    <Compile Include="Game\TableListingRequest\TableListingRequest.cs" />
+    <Compile Include="Game\TableListingResponse\TableListingResponse.cs" />
+    <Compile Include="Game\TableState\TableState.cs" />
+    <Compile Include="Game\TableSummary\TableSummary.cs" />
+    <Compile Include="Game\VerifyClientRequest\VerifyClientRequest.cs" />
+    <Compile Include="Game\VerifyClientResponse\VerifyClientResponse.cs" />
+    <Compile Include="Game\IFreezeable\IFreezeable.cs" />
+    <Compile Include="Game\IGenericCloneable\IGenericCloneable.cs" />
+    <Compile Include="Game\IRequestObject\IRequestObject.cs" />
+    <Compile Include="Game\IResponseObject\IResponseObject.cs" />
+    <Compile Include="Networking\BaseConnection\BaseConnection.cs" />
+    <Compile Include="Networking\BaseMessageHandler\BaseMessageHandler.cs" />
+    <Compile Include="Networking\BaseMultiMessageHandler\BaseMultiMessageHandler.cs" />
+    <Compile Include="Networking\BaseNetworkManager\BaseNetworkManager.cs" />
+    <Compile Include="Networking\ClientNetworkInterface\ClientNetworkInterface.cs" />
+    <Compile Include="Networking\ClientNetworkManager\ClientNetworkManager.cs" />
+    <Compile Include="Networking\GameMessageReceivedEventArgs\GameMessageReceivedEventArgs.cs" />
+    <Compile Include="Networking\IncomingMessage\IncomingMessage.cs" />
+    <Compile Include="Networking\MessageFormatter\MessageFormatter.cs" />
+    <Compile Include="Networking\MessageHandlerComponent\MessageHandlerComponent.cs" />
+    <Compile Include="Networking\MessageReceivedEventArgs\MessageReceivedEventArgs.cs" />
+    <Compile Include="Networking\OutgoingMessage\OutgoingMessage.cs" />
+    <Compile Include="Networking\UnconnectedOutgoingMessage\UnconnectedOutgoingMessage.cs" />
+    <Compile Include="Networking\IClientNetworkInterface\IClientNetworkInterface.cs" />
+    <Compile Include="Networking\IClientNetworkManager\IClientNetworkManager.cs" />
+    <Compile Include="Networking\IConnection\IConnection.cs" />
+    <Compile Include="Networking\IIncomingMessage\IIncomingMessage.cs" />
+    <Compile Include="Networking\IMessageHandler\IMessageHandler.cs" />
+    <Compile Include="Networking\IOutgoingMessage\IOutgoingMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\BinarySerializer\BinarySerializer.cs" />
+    <Compile Include="Serialization\JsonCardConverter\JsonCardConverter.cs" />
+    <Compile Include="Serialization\JsonEnumConverter\JsonEnumConverter.cs" />
+    <Compile Include="Serialization\JsonHandConverter\JsonHandConverter.cs" />
+    <Compile Include="Serialization\JsonSerializer\JsonSerializer.cs" />
+    <Compile Include="Serialization\SerializationType\SerializationType.cs" />
+    <Compile Include="Serialization\ISerialize\ISerialize.cs" />
+    <Compile Include="Utilities\DisposableComponent\DisposableComponent.cs" />
+    <Compile Include="Utilities\Extensions\Extensions.cs" />
+    <Compile Include="Utilities\Logger\Logger.cs" />
+    <Compile Include="Utilities\NetworkUtility\NetworkUtility.cs" />
+    <Compile Include="Utilities\TextFormatter\TextFormatter.cs" />
+    <Compile Include="Utilities\ThreadController\ThreadController.cs" />
+    <Compile Include="Utilities\ThreadSafeEnumerable\ThreadSafeEnumerable.cs" />
+    <Compile Include="Utilities\ThreadSafeEnumerator\ThreadSafeEnumerator.cs" />
+    <Compile Include="Utilities\ThreadSafeList\ThreadSafeList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BB.Common.WinForms\BB.Common.WinForms.csproj">
+      <Project>{2AC486AC-177F-4E43-A9E8-363FABE91E11}</Project>
+      <Name>BB.Common.WinForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BB.Poker.GatewayServer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClientListeningPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="BroadcastRange" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">58464-58484</Value>
+    </Setting>
+    <Setting Name="AppId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Poker Reloaded</Value>
+    </Setting>
+    <Setting Name="ServerType" Type="BB.Poker.Logic.ServerType" Scope="Application">
+      <Value Profile="(Default)">GatewayServer</Value>
+    </Setting>
+    <Setting Name="ServerId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BDFC322A-6317-4230-A1E5-2E5A6563684F</Value>
+    </Setting>
+    <Setting Name="ListeningPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">58469</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
